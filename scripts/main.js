@@ -1,7 +1,7 @@
 $(document).ready(function() {
   var timer, count = 0,
     time = 10,
-    donation = 500;
+    donation = 410;
 
   function transition() {
     clearTimeout(timer);
