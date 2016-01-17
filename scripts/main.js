@@ -5,7 +5,7 @@ $(document).ready(function() {
 
   function transition() {
     clearTimeout(timer);
-    $('p').html('$' + count++);
+    $('h3').html('$' + count++);
     
 		if (count >= (donation - 7)) {
       time = time + 10;
