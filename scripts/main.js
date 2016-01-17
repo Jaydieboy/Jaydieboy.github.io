@@ -1,22 +1,18 @@
 $(document).ready(function() {
-  var canvas = $("canvas");
-  var context = canvas.getContext("2d");
-  context.font = '12pt Calibri';
-  context.fillStyle = 'blue';
-  context.fillText('Area Under Construction!', 10, 130);
-  context.beginPath();
-  context.arc(95,50,40,0,2*Math.PI);
-  context.stroke();
+  //****CHANGE THESE VALUES WHEN UPDATING! (keep at top)****
+  var donation = 410,
+    updateDate = "9:00 pm 1/16/2016";
   
-  var timer, count = 0,
-    time = 10,
-    donation = 410;
+  //****Donation Count Up****
+  var timer,
+    count = 0,
+    time = 10;
 
   function transition() {
     clearTimeout(timer);
     $('h3').html('$' + count++);
-    
-		if (count >= (donation - 7)) {
+
+    if (count >= (donation - 7)) {
       time = time + 10;
     } else if (count >= (donation - 20)) {
       time = time + 5;
@@ -29,4 +25,8 @@ $(document).ready(function() {
     };
   }
   setTimeout(transition, time);
+  
+  //****Update "updateInfo" class****
+  var getNotice = $(".updateInfo").html();
+  $(".updateInfo").html(getNotice + " (Last updated: " + updateDate + ")");
 });
