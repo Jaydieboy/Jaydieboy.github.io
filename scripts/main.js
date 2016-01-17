@@ -1,4 +1,12 @@
 $(document).ready(function() {
+  var canvas = $("#speedometer");
+  var context = canvas.getContext("2d");
+  context.font = '12pt Calibri';
+  context.fillStyle = 'blue';
+  context.fillText('Area Under Construction!', 10, 130);
+  context.beginPath();
+  context.arc(95,50,40,0,2*Math.PI);
+  context.stroke();
   var timer, count = 0,
     time = 10,
     donation = 410;
