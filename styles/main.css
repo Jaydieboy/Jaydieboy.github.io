@@ -3,6 +3,9 @@
   padding: 0px;
   margin: 0px;
 }
+h4 {
+  font-size: small;
+}
 .title {
     font-size: 14px;
     background-color: #e6e6e6;
