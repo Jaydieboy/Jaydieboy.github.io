@@ -1,6 +1,6 @@
 $(document).ready(function() {
   //****CHANGE THESE VALUES WHEN UPDATING! (keep at top)****
-  var donation = 410,
+  var donation = 610,
     updateDate = "9:00 pm 1/16/2016";
   
   //****Donation Count Up****
