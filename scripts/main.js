@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var canvas = $("#speedometer");
+  var canvas = $("canvas");
   var context = canvas.getContext("2d");
   context.font = '12pt Calibri';
   context.fillStyle = 'blue';
@@ -7,6 +7,7 @@ $(document).ready(function() {
   context.beginPath();
   context.arc(95,50,40,0,2*Math.PI);
   context.stroke();
+  
   var timer, count = 0,
     time = 10,
     donation = 410;
