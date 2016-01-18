@@ -13,7 +13,7 @@ $(document).ready(function () {
     }
     function progress2(percentgo, $element) {
         var progressBarWidth = (percentgo * $element.width() / 100) - 10;
-        $element.find('#gofundme').animate({width: progressBarWidth}, 500).html("GoFundMe $" + gofundme);
+        $element.find('#gofundme').animate({width: progressBarWidth}, 500).html("$" + gofundme);
     }
 
     //****Show plane cost****
