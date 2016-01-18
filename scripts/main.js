@@ -1,7 +1,7 @@
 $(document).ready(function() {
   //****CHANGE THESE VALUES WHEN UPDATING! (keep at top)****
-  var donation = 610,
-    updateDate = "9:00 pm 1/16/2016";
+  var donation = 710,
+    updateDate = "9:10 pm 1/17/2016";
   
   //****Donation Count Up****
   var timer,
