@@ -8,11 +8,11 @@ $(document).ready(function () {
     progress(Math.ceil(100 * (donation / 1300)), $('#progressBar'));
     
     function progress(percentdon, $element) {
-        var progressBarWidth = percentdon * $element.width() / 100;
+        var progressBarWidth = (percentdon * $element.width() / 100) - 10;
         $element.find('#total').animate({width: progressBarWidth}, 500).html("$" + donation);
     }
     function progress2(percentgo, $element) {
-        var progressBarWidth = percentgo * $element.width() / 100;
+        var progressBarWidth = (percentgo * $element.width() / 100) - 10;
         $element.find('#gofundme').animate({width: progressBarWidth}, 500).html("GoFundMe $" + gofundme);
     }
 
