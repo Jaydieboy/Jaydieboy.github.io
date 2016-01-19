@@ -6,26 +6,19 @@
 
 header {
     margin: 0 auto;
-    font-size: 14px;
     background-color: #86b300;
-    height: 40px;
-    padding-top: 10px;
-    padding-left: 10px;
+    padding: 10px;
     border-bottom: 1px solid #999999;
 }
 
-header h1 {
+h1 {
     margin: 0;
+    font-weight: lighter;
+    font-size: 1.875em;
+    text-align: center;
     color: #1a1a1a;
 }
 
-header img {
-    position: relative;
-    top: 0px;
-    left: 10px;
-    width: 25px;
-    height: auto;
-}
 .raisedTitle {
     border-bottom: 1px solid #000;
     margin-bottom: 10px;
@@ -122,6 +115,5 @@ footer {
     background-color: #86b300;
     height: 40px;
     width: 100%;
-    padding-top: 10px;
-    padding-left: 10px;
+    padding: 10px;
 }
