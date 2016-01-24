@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    var donation = 710,
-            updateDate = "8:57 pm 1-20-2016",
+    var donation = 1010,
+            updateDate = "11:25 pm 1-23-2016",
             gofundme = 410;
 
     //****Draw Progress Bar****
