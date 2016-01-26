@@ -1,15 +1,65 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 header {
     margin: 0 auto;
     background-color: #86b300;
-    padding: 10px;
+    padding: 0.625em;
     border-bottom: 1px solid #999999;
 }
+/* Marquee */
+u {
+    text-decoration: underline;
+}
+#scroll_announcement {
+    width: 100%;
+    height: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #cce0ff;
+}
+
+#scroll_announcement p {
+    margin: 0;
+    position: relative;
+    color: grey;
+    font-size: 20px;
+
+    -webkit-animation: play 40s linear infinite;
+    -moz-animation: play 40s linear infinite;
+    -ms-animation: play 40s linear infinite;
+    -o-animation: play 40s linear infinite;
+    animation: play 40s linear infinite;
+}
+
+@-webkit-keyframes play {
+    from { left:    100%; }
+    to { left: -1000px; }
+}
+
+@-moz-keyframes play {
+    from { left:    100%; }
+    to { left: -1000px; }
+}
+
+@-ms-keyframes play {
+    from { left:    100%; }
+    to { left: -1000px; }
+}
+
+@-o-keyframes play {
+    from { left:    100%; }
+    to { left: -1000px; }
+}
+
+@keyframes play {
+    from { left:    100%; }
+    to { left: -1000px; }
+}
+/******************************/
 
 h1 {
     margin: 0;
@@ -21,14 +71,13 @@ h1 {
 
 .raisedTitle {
     border-bottom: 1px solid #000;
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
 }
 .donationInfo {
-    min-width: 400px;
-    max-width: 600px;
-    height: 100px;
-    margin: 25px auto;
-    padding: 32px;
+    width: 37.5em;
+    height: 6.25em;
+    margin: 1.5625em auto;
+    padding: 2em;
     border-radius: 32px 32px 32px 32px;
     -moz-border-radius: 32px 32px 32px 32px;
     -webkit-border-radius: 32px 32px 32px 32px;
@@ -40,11 +89,11 @@ h1 {
 }
 
 #progressBar {
-    width: 400px;
+    width: 450px;
     height: 22px;
-    border-radius: 32px 32px 32px 32px;
-    -moz-border-radius: 32px 32px 32px 32px;
-    -webkit-border-radius: 32px 32px 32px 32px;
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
     border: 1px solid #666666;
     background-color: #666666;
 }
@@ -57,9 +106,9 @@ h1 {
     text-align: right;
     line-height: 22px; /* same as #progressBar height if we want text middle aligned */
     width: 0;
-    border-radius: 32px;
-    -moz-border-radius: 32px;
-    -webkit-border-radius: 32px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
     overflow: hidden;
 }
 
@@ -73,9 +122,9 @@ h1 {
     text-align: right;
     line-height: 22px; /* same as #progressBar height if we want text middle aligned */
     width: 0px;
-    border-radius: 32px 32px 32px 32px;
-    -moz-border-radius: 32px 32px 32px 32px;
-    -webkit-border-radius: 32px 32px 32px 32px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
     border: 0px solid #000000;
     background: #ffa31a;
     overflow: hidden;
@@ -84,7 +133,7 @@ h1 {
 .donationInfo img {
     position: relative;
     top: -22px;
-    left: 410px;
+    left: 460px;
     width: 22px;
     height: auto;
 }
@@ -93,7 +142,7 @@ h1 {
     visibility: hidden;
     position: relative;
     top: -70px;
-    left: 440px;
+    left: 490px;
     padding: 10px;
     width: 100px;
     border-radius: 10px 10px 10px 10px;
@@ -104,6 +153,31 @@ h1 {
     -moz-box-shadow: 3px 3px 11px 0px rgba(0,0,0,0.75);
     box-shadow: 3px 3px 11px 0px rgba(0,0,0,0.75);
     background: #cce5ff;
+}
+#canvas_container {
+    display: none;
+    padding: 2em;
+    margin: 25px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 32px 32px 32px 32px;
+    -moz-border-radius: 32px 32px 32px 32px;
+    -webkit-border-radius: 32px 32px 32px 32px;
+    border: 2px solid #86b300;
+    background: #e6ffcc;
+    -webkit-box-shadow: 10px 10px 25px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 25px -15px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 25px -15px rgba(0, 0, 0, 0.75);
+}
+
+#canvas_container h2 {
+    border-bottom: 1px solid #000;
+    margin-bottom: 0 0.625em;
+}
+
+canvas {
+    padding: 0;
+    margin: auto;
 }
 
 footer {
@@ -116,4 +190,41 @@ footer {
     height: 40px;
     width: 100%;
     padding: 10px;
+}
+
+/*****************************************************/
+/*Screen size style modifications*/
+/*****************************************************/
+
+@media only screen and (max-width: 700px) {
+    .donationInfo {
+        display: none;
+    }
+
+    #canvas_container {
+        display: block; 
+    }
+    
+    #canvas_container img {
+        position: relative;
+        top: -50px;
+        width: 22px;
+        height: auto;
+    }
+    
+    #plane_price_mobile {
+        overflow: hidden;
+    position: relative;
+    top: -150px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #86b300;
+    -webkit-box-shadow: 3px 3px 11px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 11px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 11px 0px rgba(0,0,0,0.75);
+    background: #cce5ff;
+    }
 }
