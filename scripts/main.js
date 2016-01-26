@@ -52,12 +52,8 @@ $("#plane_mobile").click(function(){
     function adjInt(num) {
         if (num % 5 !== 0) {
             adjNeeded = true;
-            var digit = num.toString()[0];
-            var adjnum = parseInt(digit);
-            if (adjnum > 5) {
-                var adjFinal = num - (adjnum - 5);
-                return [adjNeeded, adjFinal];
-            }
+            var adjFinal = num - (num % 5);
+            return [adjNeeded, adjFinal];
         } else {
             return [adjNeeded, num];
         }
