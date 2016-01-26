@@ -2,9 +2,10 @@
 <html>
     <head>
         <title>Jayden's Philippine Mission Trip</title>
-        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <!--<script src="scripts/jquery-1.3.1.min.js"></script>-->
         <script src="scripts/main.js"></script>
 
     </head>
@@ -17,21 +18,30 @@
         <header>
             <h1>Jayden's Philippine Mission Trip</h1>
         </header>
+        <div id="scroll_announcement">
+            <p><b>Announcement:</b> I will be buying tickets on the <u>28th of January</u>.</p>
+        </div>
         <div class="donationInfo">
             <h2 class="raisedTitle">Amount raised so far</h2>
             <div id="progressBar">
                 <div id="total">
-                    
+
                 </div>
                 <div id="gofundme">
-                                                    
+
                 </div>
             </div>
             <img id="plane" src="http://i.imgur.com/hUqSGud.png?1" alt="Plane">
             <div id="planePrice"><b>Plane Ticket: $1,300</b></div>
         </div>
+        <div id="canvas_container">
+            <h2>Amount raised so far</h2>
+            <canvas id="mobile_progress_bar" width="300" height="300">Your browser does not support HTML5 Canvas</canvas>
+            <img id="plane_mobile" src="http://i.imgur.com/hUqSGud.png?1" alt="Plane">
+            <div id="plane_price_mobile"><b>Plane Ticket: $1,300</b></div>
+        </div>
         <footer>
-            <p class="updateInfo">Updated every day (except Friday) around 9 pm Pacific Standard Time. <b>New webpage update coming! (More mobile friendly) Also, watch for new announcement!</b></p>
+            <p class="updateInfo">Updated every day (except Friday) around 9 pm Pacific Standard Time.</p>
         </footer>
     </body>
 </html>
