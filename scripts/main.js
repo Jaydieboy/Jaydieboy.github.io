@@ -1,7 +1,7 @@
 $(document).ready(function () {
     //****Global variables (Must be whole number)****
     var donation = 1202,
-            updateDate = "8:50 pm 2-1-2016",
+            updateDate = "9:02 pm 2-2-2016",
             gofundme = 410;
 
     $("#plane_price_mobile").hide(); 
