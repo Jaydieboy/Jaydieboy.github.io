@@ -6,7 +6,7 @@
 
 header {
     margin: 0 auto;
-    background-color: #86b300;
+    background-color: #3c8ed1;
     padding: 0.625em;
     border-bottom: 1px solid #999999;
 }
@@ -66,7 +66,7 @@ h1 {
     font-weight: lighter;
     font-size: 1.875em;
     text-align: center;
-    color: #1a1a1a;
+    color: #white;
 }
 
 .raisedTitle {
